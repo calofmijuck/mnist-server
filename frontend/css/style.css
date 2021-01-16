@@ -1,0 +1,19 @@
+#sketchpadapp {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#sketchpad {
+    border: 2px solid #888;
+    border-radius: 4px;
+    position: relative;
+}
+
+body {
+    text-align: center;
+    margin: 10%;
+}

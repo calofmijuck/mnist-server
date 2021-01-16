@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/canvas.js"></script>
+    <script src="js/predict.js"></script>
+
+    <title>손글씨 숫자 판별</title>
+</head>
+
+<body onload="init()">
+    <h1>손글씨 숫자 판별기</h1>
+
+    <h2>숫자 한 글자만 입력해 주세요!</h2>
+
+    <p>MNIST로 간단하게 구현해서 성능이 좋지는 않습니다. ㅎㅎ.</p>
+
+    <canvas id="sketchpad" height="280" width="280"></canvas>
+
+    <br><br>
+
+    <h3>판별 결과: <span id="answer">???</span></h3>
+
+    <br><br>
+
+    <button type="button" class="btn btn-primary btn-lg" id="predict" onclick="predict()">판별하기</button>
+
+    <button type="button" class="btn btn-danger btn-lg" id="erase" onclick="clearCanvas()">지우기</button>
+</body>
+
+</html>
